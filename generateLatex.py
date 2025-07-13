@@ -47,10 +47,10 @@ def generate_latex(names):
 \usepackage[table]{xcolor}
 \usepackage{arydshln}
 
-\definecolor{lightgray}{RGB}{200,200,200} % Light gray color
+\definecolor{lightgray}{RGB}{180,180,180} % Light gray color
 \arrayrulecolor{lightgray}
 
-\setlength{\dashlinedash}{1pt}
+\setlength{\dashlinedash}{2pt}
 \setlength{\dashlinegap}{4pt}
 
 \newcolumntype{C}[1]{%
