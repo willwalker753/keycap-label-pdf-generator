@@ -1,0 +1,37 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{a4paper, margin=1cm}
+\usepackage{array}
+\usepackage{lmodern}
+\usepackage[table]{xcolor}
+\usepackage{arydshln}
+
+\definecolor{lightgray}{RGB}{200,200,200} % Light gray color
+\arrayrulecolor{lightgray}
+
+\setlength{\dashlinedash}{1pt}
+\setlength{\dashlinegap}{4pt}
+
+\newcolumntype{C}[1]{%
+  >{\begin{minipage}[c][1.3cm][c]{#1}\centering\arraybackslash}% 
+  p{#1}% 
+  <{\end{minipage}}%
+}
+\setlength{\tabcolsep}{0pt} 
+
+\begin{document}
+\pagestyle{empty}
+\begin{center}
+\fontsize{7}{9}\selectfont
+{\fontfamily{lmr}\selectfont
+\begin{tabular}{ : *{15}{C{1.2cm}:} }
+\hdashline
+One switch & Two switch & Red Fish & Blue Fish & One switch & Two switch & Red Fish & Blue Fish & One switch & Two switch & Red Fish & Blue Fish & One switch & Two switch & Red Fish \\ 
+\hdashline
+Blue Fish & One switch & Two switch & Red Fish & Blue Fish & One switch & Two switch & Red Fish & Blue Fish &  &  &  &  &  &  \\ 
+\hdashline
+\end{tabular}
+}
+\end{center}
+\end{document}
