@@ -108,7 +108,7 @@ Cherry MX Black
 Cherry MX Blue
 Cherry MX Brown
 Cherry MX Green
-Cherry MX Gray-brown
+Cherry MX Grey
 Cherry MX Silver
 Cherry MX Clear
 Cherry MX White
