@@ -4,7 +4,7 @@ import os
 CELL_HEIGHT = "1.3cm"
 CELL_WIDTH = "1.2cm"
 COLUMN_COUNT = 15 # Number of columns per row (adjust based on page width)
-FONT_FAMILY = "lmr" # Font family: e.g. cmr (Computer Modern), lmr (Latin Modern), ptm (Times), phv (Helvetica)
+FONT_FAMILY = "phv" # Font family: e.g. cmr (Computer Modern), lmr (Latin Modern), ptm (Times), phv (Helvetica)
 FONT_SIZE = 7
 FONT_LINE_SPACING = 9
 INPUT_FILE = "input_labels.txt"  # Input file with switch names (one per line)
@@ -14,8 +14,25 @@ OUTPUT_FILE = "output_labels.tex"
 def read_switch_names(file_path):
     if not os.path.exists(file_path):
         raise FileNotFoundError(f"Input file {file_path} not found")
-    with open(file_path, 'r') as f:
-        names = [line.strip() for line in f if line.strip()]
+    
+    nameDict = {}
+    with open(file_path, mode='r') as f:
+        for line in f:
+            name = line.strip()
+            if len(name) == 0:
+                continue
+            if name in nameDict:
+                print(f'Skipping duplicate label: "{name}"')
+                continue
+            nameDict[name] = None
+
+    with open('input_labels_sorted.log', mode='w') as sortedLogF:
+        sortedNames = list(nameDict.keys())
+        sortedNames.sort(reverse=False)
+        sortedLogF.write('\n'.join(sortedNames))
+
+    names = list(nameDict.keys())
+    print(f'Found {len(names)} labels to generate')
     return names
 
 # Generate LaTeX code

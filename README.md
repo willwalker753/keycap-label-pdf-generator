@@ -5,9 +5,10 @@
 
 * These labels are intended for "relegendable" (a.k.a. "double layer") keycaps. 
 
-    * [Here is an example](https://www.amazon.com/Original-Mechanical-Keyboards-Keyboard-Projects/dp/B0F7RB7LS9?gQT=1&th=1)
+    * [Here is an example](https://a.co/d/9BHkL2X)
 
         <img src="images/double_layer_keycaps.jpg" alt="double layer keycaps" height="300">
 
 * The generated PDF looks like this.
-<b>TODO</b>
+
+    <img src="images/sample_output.png" alt="sample output" height="600">
