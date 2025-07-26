@@ -23,12 +23,13 @@ def read_switch_names(file_path):
     nameDict = {}
     with open(file_path, mode='r') as f:
         for line in f:
-            name = line.strip()
+            name = line.strip().split('//')[0].strip() # remove comments from the line
             if len(name) == 0:
                 continue
             if name in nameDict:
                 print(f'Skipping duplicate label: "{name}"')
                 continue
+            
             nameDict[name] = None
 
     with open('input_labels_sorted.log', mode='w') as sortedLogF:
