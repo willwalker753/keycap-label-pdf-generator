@@ -1,15 +1,17 @@
-Durock Ice King Linear
-Kailh Deep Sea Islet
-Akko V3 Fairy
-Akko Dracula
-Akko Mirror
-Akko Stellar Rose
-Akko Starlit Switch
-Akko V3 Piano Pro
-Akko Green Fog
-Akko V3 Silver Pro
-Outemu Silent Lemon V1
-Outemu Silent Peach V1
+Outemu Silent Peach V3 (Lubed)
+
+// Durock Ice King Linear
+// Kailh Deep Sea Islet
+// Akko V3 Fairy
+// Akko Dracula
+// Akko Mirror
+// Akko Stellar Rose
+// Akko Starlit Switch
+// Akko V3 Piano Pro
+// Akko Green Fog
+// Akko V3 Silver Pro
+// Outemu Silent Lemon V1
+// Outemu Silent Peach V1
 
 // Durock Ice King Tactile
 // Durock Shrimp Silent T1
